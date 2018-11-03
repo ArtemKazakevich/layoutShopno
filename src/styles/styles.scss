@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+header {
+  padding: 3% 10% 5% 10%;
+  background-color: #eff0f2;
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.border_logo {
+  border: 5px solid #170f1c;
+  padding: 0.375rem 1rem;
+}
+nav img {
+  padding: 1rem;
+}
+nav img:hover {
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  background-color: rgba(47, 47, 47, 0.2);
+}
+.dropdown_menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #505050;
+  font-family: "Montserrat";
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+}
+.dropdown_menu a:hover {
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  background-color: rgba(47, 47, 47, 0.2);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  position: relative;
+}
+.dropdown_menu {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  right: 100%;
+  bottom: 30%;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: opacity 0.5s ease-in-out;
+}
+li:hover .dropdown_menu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.dropdown_menu li .second_level {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 300px;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.dropdown_menu li .second_level li {
+  margin-top: 5%;
+}
+.dropdown_menu li:hover .second_level {
+  opacity: 1;
+  transform: scaleY(1);
+}
+header h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  color: #505050;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin: 15% 0;
+}
+header h1 span{
+  padding: 0.5%;
+  background-color: #9cd5d1;
+}
