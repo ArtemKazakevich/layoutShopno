@@ -1,32 +1,24 @@
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype"); }
 
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype"); }
 
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-weight: bold; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format("truetype"); }
 
 @font-face {
   font-family: "Merriweather";
   src: url(../fonts/Merriweather/Merriweather-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-weight: bold; }
 
 @font-face {
   font-family: "Merriweather";
@@ -37,7 +29,6 @@
 @font-face {
   font-family: "Merriweather";
   src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
-  font-weight: normal;
   font-style: italic; }
 
 html {
@@ -47,10 +38,10 @@ body {
   margin: 0; }
 
 header {
-  padding: 3% 10% 5% 10%;
+  padding: 4% 10%;
   background-color: #eff0f2; }
 
-.header-navigation {
+.header_navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,8 +61,8 @@ nav img {
 
 nav img:hover {
   border-radius: 0.75rem;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
   background-color: rgba(47, 47, 47, 0.2); }
 
 .dropdown_menu a {
@@ -84,8 +75,8 @@ nav img:hover {
 
 .dropdown_menu a:hover {
   border-radius: 0.75rem;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
   background-color: rgba(47, 47, 47, 0.2); }
 
 nav ul {
@@ -120,7 +111,7 @@ li:hover .dropdown_menu {
   position: absolute;
   opacity: 0;
   display: block;
-  width: 300px;
+  width: 18.75rem;
   top: 100%;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
@@ -137,15 +128,187 @@ li:hover .dropdown_menu {
   -webkit-transform: scaleY(1);
   transform: scaleY(1); }
 
+.header_content {
+  background: url(../img/header/Cork_coaster.png) no-repeat bottom right;
+  margin: 15% 5% 0;
+  padding-bottom: 15%; }
+
 header h1 {
-  font-size: 45px;
-  letter-spacing: 3px;
+  font-size: 2.5rem;
+  letter-spacing: 0.1875rem;
   color: #505050;
   font-family: "Montserrat";
   font-weight: bold;
-  text-align: center;
-  margin: 15% 0; }
+  text-align: center; }
 
 header h1 span {
   padding: 0.5%;
   background-color: #9cd5d1; }
+
+header button {
+  border: 0.1875rem solid #777879;
+  border-radius: 0.3125rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  display: block;
+  margin: 15% auto 0; }
+
+.wrapper_about_us {
+  padding: 7% 10%;
+  background-color: #f8fafa; }
+
+.wrapper_about_us h2 {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0; }
+
+.wrapper_about_us p {
+  font-size: 1.125rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  font-family: "Merriweather";
+  text-align: center; }
+
+.wrapper_several_works_and_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10%; }
+
+.img_several_works {
+  width: 50%; }
+
+.description {
+  width: 50%; }
+
+.description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.description h3 {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  font-family: "Merriweather";
+  font-weight: bold; }
+
+.description p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-family: "Raleway";
+  text-align: left; }
+
+.wrapper_featured_works {
+  padding: 7% 10%; }
+
+.wrapper_featured_works h2 {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0; }
+
+.wrapper_featured_works p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-family: "Merriweather";
+  text-align: center;
+  margin-bottom: 10%; }
+
+.wrapper_featured_works img {
+  width: 32%;
+  height: 280px; }
+
+.image_works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2%; }
+
+.wrapper_services {
+  padding: 7% 10%;
+  background-color: #f9fbfb; }
+
+.wrapper_services h2 {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center; }
+
+.wrapper_services p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-family: "Merriweather";
+  text-align: center; }
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.background_sevices h3 {
+  margin-top: 25%;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.8125rem;
+  color: #ffffff;
+  font-family: "Merriweather";
+  font-weight: bold; }
+
+.background_sevices p {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  font-family: "Raleway";
+  text-align: left; }
+
+.background_sevices a {
+  font-size: 1.125rem;
+  letter-spacing: 0.0625rem;
+  line-height: 5.3125rem;
+  color: #f9fbfb;
+  font-family: "Raleway";
+  text-align: left;
+  text-decoration: none;
+  padding-right: 10%;
+  background: url(../img/most_service/go_over.png) no-repeat right center; }
+
+.background_sevices {
+  background-color: #000000;
+  opacity: 0.7;
+  padding: 10% 25% 5% 10%; }
+
+.background_virtual_receptionist {
+  width: 55%;
+  background: url(../img/most_service/blog-1.png) no-repeat;
+  background-size: cover; }
+
+.background_psd_design {
+  width: 40%;
+  background: url(../img/most_service/blog-2.png) no-repeat;
+  background-size: cover; }
