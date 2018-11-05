@@ -168,7 +168,8 @@ header button {
   font-family: "Montserrat";
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .wrapper_about_us p {
   font-size: 1.125rem;
@@ -219,7 +220,8 @@ header button {
   font-family: "Montserrat";
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .wrapper_featured_works p {
   font-size: 1rem;
@@ -247,13 +249,18 @@ header button {
   padding: 7% 10%;
   background-color: #f9fbfb; }
 
+.wrapper_services > div {
+  margin-top: 10%; }
+
 .wrapper_services h2 {
   font-size: 2.375rem;
   letter-spacing: 0.125rem;
   color: #000000;
   font-family: "Montserrat";
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .wrapper_services p {
   font-size: 1rem;
@@ -338,3 +345,205 @@ header button {
   width: 55%;
   background: url(../img/most_service/blog-6.png) no-repeat;
   background-size: cover; }
+
+.wrapper_team {
+  padding: 7% 10%; }
+
+.wrapper_team h2 {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.wrapper_team p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  font-family: "Merriweather";
+  text-align: center; }
+
+.description_employee {
+  width: 30%; }
+
+.description_employee h3 {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #272727;
+  font-family: "Merriweather";
+  font-weight: bold; }
+
+.description_employee h3 span {
+  font-size: 0.8rem;
+  letter-spacing: 0.0625rem;
+  color: #969696;
+  font-family: "Merriweather";
+  font-weight: normal;
+  font-style: italic; }
+
+.description_employee p {
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  color: #000000;
+  font-family: "Raleway";
+  text-align: left; }
+
+.background_description_employee_one {
+  height: 400px;
+  background: url(../img/team_part/team_1.png) no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.personal_data {
+  background-color: #6ff6eb;
+  padding: 10%;
+  width: 70%;
+  opacity: 0;
+  position: relative; }
+
+.personal_data::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #6ff6eb; }
+
+.personal_data img {
+  margin-right: 5%; }
+
+.background_description_employee_one:hover .personal_data {
+  opacity: 1;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.background_description_employee_two {
+  height: 400px;
+  background: url(../img/team_part/team_2.png) no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.background_description_employee_two:hover .personal_data {
+  opacity: 1;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.background_description_employee_three {
+  height: 400px;
+  background: url(../img/team_part/team_3.png) no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.background_description_employee_three:hover .personal_data {
+  opacity: 1;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.background_description_employee_four {
+  height: 400px;
+  background: url(../img/team_part/team_4.png) no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.background_description_employee_four:hover .personal_data {
+  opacity: 1;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.background_description_employee_five {
+  height: 400px;
+  background: url(../img/team_part/team_5.png) no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.background_description_employee_five:hover .personal_data {
+  opacity: 1;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.alignment {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.wrapper_discussions {
+  padding: 7% 10%;
+  background-color: #f9fbfb; }
+
+.wrapper_discussions h2 {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.wrapper_discussions p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  font-family: "Merriweather";
+  text-align: center; }
+
+.discussions {
+  padding: 5% 0 5% 40%;
+  margin-top: 5%;
+  background: url(../img/testimonial/Rounded-Rectangle.png) no-repeat left, url(../img/testimonial/progress.png) no-repeat right bottom; }
+
+.discussions_text {
+  background-color: #eaebed;
+  padding: 11% 10%;
+  margin-bottom: 6%;
+  border-radius: 5px; }
+
+.discussions_text h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  font-family: "Merriweather";
+  font-weight: bold;
+  text-align: center; }
+
+.discussions_text p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.6875rem;
+  color: #000000;
+  font-family: "Raleway";
+  padding-bottom: 5%;
+  background: url(../img/testimonial/Star.png) 50% bottom no-repeat; }
+
+.discussions_text span {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #969696;
+  font-family: "Merriweather";
+  font-weight: normal;
+  font-style: italic; }
+
+.wrapper_logos {
+  padding: 7% 0;
+  text-align: center; }
