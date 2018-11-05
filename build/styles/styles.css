@@ -264,13 +264,14 @@ header button {
   text-align: center; }
 
 .services {
+  margin-top: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
-.background_sevices h3 {
+.services h3 {
   margin-top: 25%;
   font-size: 1.25rem;
   letter-spacing: 0.0625rem;
@@ -279,7 +280,7 @@ header button {
   font-family: "Merriweather";
   font-weight: bold; }
 
-.background_sevices p {
+.services p {
   font-size: 1rem;
   letter-spacing: 0;
   line-height: 1.5625rem;
@@ -287,7 +288,7 @@ header button {
   font-family: "Raleway";
   text-align: left; }
 
-.background_sevices a {
+.services a {
   font-size: 1.125rem;
   letter-spacing: 0.0625rem;
   line-height: 5.3125rem;
@@ -298,10 +299,15 @@ header button {
   padding-right: 10%;
   background: url(../img/most_service/go_over.png) no-repeat right center; }
 
-.background_sevices {
+.background_sevices_rectangle {
   background-color: #000000;
-  opacity: 0.7;
+  opacity: 0.6;
   padding: 10% 25% 5% 10%; }
+
+.background_sevices_square {
+  background-color: #000000;
+  opacity: 0.6;
+  padding: 15% 15% 7% 10%; }
 
 .background_virtual_receptionist {
   width: 55%;
@@ -309,6 +315,26 @@ header button {
   background-size: cover; }
 
 .background_psd_design {
-  width: 40%;
+  width: 42%;
   background: url(../img/most_service/blog-2.png) no-repeat;
+  background-size: cover; }
+
+.background_virtual_receptionist_two {
+  width: 55%;
+  background: url(../img/most_service/blog-3.png) no-repeat;
+  background-size: cover; }
+
+.background_psd_html {
+  width: 42%;
+  background: url(../img/most_service/blog-4.png) no-repeat;
+  background-size: cover; }
+
+.background_psd_design_two {
+  width: 42%;
+  background: url(../img/most_service/blog-5.png) no-repeat;
+  background-size: cover; }
+
+.background_virtual_receptionist_three {
+  width: 55%;
+  background: url(../img/most_service/blog-6.png) no-repeat;
   background-size: cover; }
