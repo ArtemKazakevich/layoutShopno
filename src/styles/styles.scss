@@ -113,9 +113,8 @@ li:hover .dropdown_menu {
   transform: scaleY(1);
 }
 .header_content {
-  background: url(../img/header/Cork_coaster.png) no-repeat bottom right;
   margin: 15% 5% 0;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 header h1 {
   font-size: 2.5rem;
@@ -168,9 +167,26 @@ header button {
 }
 .img_several_works {
   width: 50%;
+  background: url(../img/about_us/Rectangle.png) no-repeat center center;
+  text-align: center;
+}
+.slider{
+  margin-top: 5%;
+}
+.slide_switch{
+  height: 1rem;
+  width: 1rem;
+  background-color: #d0d0d0;
+  border-radius: 0.1875rem;
+  margin: 0 1%;
+  display: inline-block;
+}
+.slide_switch:hover{
+  background-color: #71f6eb;
 }
 .description {
   width: 50%;
+  padding: 4% 0 0 5%;
 }
 .description ul {
   margin: 0;
@@ -217,10 +233,12 @@ header button {
 .wrapper_featured_works img {
   width: 32%;
   height: 280px;
+  margin: 1% 0;
 }
 .image_works {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 2%;
 }
 .wrapper_services {
@@ -340,6 +358,7 @@ header button {
   color: #000000;
   font-family: "Merriweather";
   text-align: center;
+  margin-bottom: 10%;
 }
 .description_employee {
   width: 30%;
