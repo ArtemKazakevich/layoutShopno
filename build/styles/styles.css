@@ -547,3 +547,162 @@ header button {
 .wrapper_logos {
   padding: 7% 0;
   text-align: center; }
+
+.wrapper_footer {
+  background: url(../img/footer/christmas_snow_tees_wide.png) no-repeat;
+  background-size: cover; }
+
+.background_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #eaebed;
+  opacity: 0.8;
+  padding: 7% 10%; }
+
+.form {
+  background-color: #000000;
+  opacity: 0.8;
+  padding: 3%;
+  width: 53%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.your_name {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8; }
+
+.your_subject {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8; }
+
+.your_mail {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8; }
+
+.your_Message {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3% 3% 25% 3%;
+  background-color: #000000;
+  opacity: 0.8; }
+
+.wrapper_footer input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Raleway"; }
+
+.wrapper_footer input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Raleway"; }
+
+.wrapper_footer input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Raleway"; }
+
+.wrapper_footer input::placeholder {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Raleway"; }
+
+.registration_button {
+  background-color: #6eeee4;
+  border-radius: 0.3125rem;
+  font-size: 1.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 3% 7%;
+  border: none;
+  cursor: pointer; }
+
+.contact_list {
+  background-color: #000000;
+  opacity: 0.8;
+  width: 45%;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.contact_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.contact_list li {
+  margin-top: 2%; }
+
+.contact_list a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  font-family: "Raleway"; }
+
+.contact_list img {
+  width: 100%;
+  padding-top: 5%; }
+
+.social_links {
+  text-align: center;
+  background-color: #262b2e;
+  padding: 7% 0; }
+
+.social_links h3 {
+  font-size: 1rem;
+  color: #bbb8b9;
+  font-family: "Raleway"; }
+
+.social_links p {
+  font-size: 1rem;
+  color: #bbb8b9;
+  font-family: "Raleway";
+  text-align: center; }
+
+.social_links ul {
+  list-style: none;
+  margin: 2% 0 4%;
+  padding: 0; }
+
+.social_links li {
+  display: inline-block;
+  margin-right: 2%; }
+
+.social_links li a {
+  background-color: #3f4244;
+  padding: 40%;
+  color: #bbb8b9;
+  text-decoration: none; }
+
+.social_links li:hover a {
+  background-color: #6eeee4;
+  color: #000000; }

@@ -476,13 +476,13 @@ header button {
   font-family: "Merriweather";
   text-align: center;
 }
-.discussions{
+.discussions {
   padding: 5% 0 5% 40%;
   margin-top: 5%;
   background: url(../img/testimonial/Rounded-Rectangle.png) no-repeat left,
-              url(../img/testimonial/progress.png) no-repeat right bottom;
+    url(../img/testimonial/progress.png) no-repeat right bottom;
 }
-.discussions_text{
+.discussions_text {
   background-color: #eaebed;
   padding: 11% 10%;
   margin-bottom: 6%;
@@ -496,16 +496,16 @@ header button {
   font-weight: bold;
   text-align: center;
 }
-.discussions_text p{
-font-size: 1rem;
-letter-spacing: 0.0625rem;
-line-height: 1.6875rem;
-color: #000000;
-font-family: "Raleway";
-padding-bottom: 5%;
-background: url(../img/testimonial/Star.png) 50% bottom no-repeat; 
+.discussions_text p {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.6875rem;
+  color: #000000;
+  font-family: "Raleway";
+  padding-bottom: 5%;
+  background: url(../img/testimonial/Star.png) 50% bottom no-repeat;
 }
-.discussions_text span{
+.discussions_text span {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #969696;
@@ -513,7 +513,141 @@ background: url(../img/testimonial/Star.png) 50% bottom no-repeat;
   font-weight: normal;
   font-style: italic;
 }
-.wrapper_logos{
+.wrapper_logos {
   padding: 7% 0;
   text-align: center;
+}
+.wrapper_footer {
+  background: url(../img/footer/christmas_snow_tees_wide.png) no-repeat;
+  background-size: cover;
+}
+.background_footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaebed;
+  opacity: 0.8;
+  padding: 7% 10%;
+}
+.form {
+  background-color: #000000;
+  opacity: 0.8;
+  padding: 3%;
+  width: 53%;
+  box-sizing: border-box;
+}
+.your_name {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.your_subject {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.your_mail {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.your_Message {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 3% 3% 25% 3%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.wrapper_footer input::placeholder {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Raleway";
+}
+.registration_button {
+  background-color: #6eeee4;
+  border-radius: 0.3125rem;
+  font-size: 1.125rem;
+  color: #000000;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 3% 7%;
+  border: none;
+  cursor: pointer;
+}
+.contact_list {
+  background-color: #000000;
+  opacity: 0.8;
+  width: 45%;
+  padding: 3%;
+  box-sizing: border-box;
+}
+.contact_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact_list li {
+  margin-top: 2%;
+}
+.contact_list a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  font-family: "Raleway";
+}
+.contact_list img {
+  width: 100%;
+  padding-top: 5%;
+}
+.social_links {
+  text-align: center;
+  background-color: #262b2e;
+  padding: 7% 0;
+}
+.social_links h3 {
+  font-size: 1rem;
+  color: #bbb8b9;
+  font-family: "Raleway";
+}
+.social_links p {
+  font-size: 1rem;
+  color: #bbb8b9;
+  font-family: "Raleway";
+  text-align: center;
+}
+.social_links ul{
+  list-style: none;
+  margin: 2% 0 4%;
+  padding: 0;
+}
+.social_links li{
+  display: inline-block;
+  margin-right: 2%;
+}
+.social_links li a{
+  background-color: #3f4244;
+  padding: 40%;
+  color: #bbb8b9;
+  text-decoration: none;
+}
+.social_links li:hover a{
+  background-color: #6eeee4;
+  color: #000000;
 }
