@@ -163,12 +163,17 @@ header button {
 }
 .wrapper_several_works_and_description {
   display: flex;
-  margin-top: 10%;
+  align-items: stretch;
+  align-items: center;
+  margin-top: 5%;
 }
 .img_several_works {
   width: 50%;
   background: url(../img/about_us/Rectangle.png) no-repeat center center;
   text-align: center;
+}
+.img_several_works img{
+  margin-top: 8%;
 }
 .slider{
   margin-top: 5%;
@@ -186,7 +191,7 @@ header button {
 }
 .description {
   width: 50%;
-  padding: 4% 0 0 5%;
+  padding-left: 5%;
 }
 .description ul {
   margin: 0;
@@ -232,7 +237,6 @@ header button {
 }
 .wrapper_featured_works img {
   width: 32%;
-  height: 280px;
   margin: 1% 0;
 }
 .image_works {
@@ -266,13 +270,14 @@ header button {
   font-family: "Merriweather";
   text-align: center;
 }
+
+
 .services {
-  margin-top: 1.5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services h3 {
-  margin-top: 25%;
   font-size: 1.25rem;
   letter-spacing: 0.0625rem;
   line-height: 1.8125rem;
@@ -291,7 +296,6 @@ header button {
 .services a {
   font-size: 1.125rem;
   letter-spacing: 0.0625rem;
-  line-height: 5.3125rem;
   color: #f9fbfb;
   font-family: "Raleway";
   text-align: left;
@@ -300,25 +304,25 @@ header button {
   background: url(../img/most_service/go_over.png) no-repeat right center;
 }
 .background_sevices_rectangle {
-  background-color: #000000;
-  opacity: 0.6;
-  padding: 10% 25% 5% 10%;
+  background-color: rgba($color: #000000, $alpha: 0.7);
 }
 .background_sevices_square {
-  background-color: #000000;
-  opacity: 0.6;
-  padding: 15% 15% 7% 10%;
+  background-color: rgba($color: #000000, $alpha: 0.7);
 }
 .background_virtual_receptionist {
   width: 55%;
   background: url(../img/most_service/blog-1.png) no-repeat;
   background-size: cover;
+  position: relative;
 }
 .background_psd_design {
   width: 42%;
   background: url(../img/most_service/blog-2.png) no-repeat;
   background-size: cover;
+  position: relative;
 }
+
+
 .background_virtual_receptionist_two {
   width: 55%;
   background: url(../img/most_service/blog-3.png) no-repeat;
@@ -339,6 +343,8 @@ header button {
   background: url(../img/most_service/blog-6.png) no-repeat;
   background-size: cover;
 }
+
+
 .wrapper_team {
   padding: 7% 10%;
 }
