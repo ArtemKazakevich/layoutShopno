@@ -31,7 +31,7 @@
   src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
   font-style: italic;
 }
-
+/**********************************************************************************************************************************/
 html {
   font-size: 16px;
 }
@@ -140,6 +140,7 @@ header button {
   display: block;
   margin: 15% auto 0;
 }
+/*********************************************************************************************************************************/
 .wrapper_about_us {
   padding: 7% 10%;
   background-color: #f8fafa;
@@ -172,13 +173,13 @@ header button {
   background: url(../img/about_us/Rectangle.png) no-repeat center center;
   text-align: center;
 }
-.img_several_works img{
+.img_several_works img {
   margin-top: 8%;
 }
-.slider{
+.slider {
   margin-top: 5%;
 }
-.slide_switch{
+.slide_switch {
   height: 1rem;
   width: 1rem;
   background-color: #d0d0d0;
@@ -186,7 +187,7 @@ header button {
   margin: 0 1%;
   display: inline-block;
 }
-.slide_switch:hover{
+.slide_switch:hover {
   background-color: #71f6eb;
 }
 .description {
@@ -213,6 +214,7 @@ header button {
   font-family: "Raleway";
   text-align: left;
 }
+/*********************************************************************************************************************************/
 .wrapper_featured_works {
   padding: 7% 10%;
 }
@@ -245,6 +247,7 @@ header button {
   flex-wrap: wrap;
   margin-top: 2%;
 }
+/****************************************************************************************************************************/
 .wrapper_services {
   padding: 7% 10%;
   background-color: #f9fbfb;
@@ -270,7 +273,6 @@ header button {
   font-family: "Merriweather";
   text-align: center;
 }
-
 
 .services {
   display: flex;
@@ -322,7 +324,6 @@ header button {
   position: relative;
 }
 
-
 .background_virtual_receptionist_two {
   width: 55%;
   background: url(../img/most_service/blog-3.png) no-repeat;
@@ -343,8 +344,7 @@ header button {
   background: url(../img/most_service/blog-6.png) no-repeat;
   background-size: cover;
 }
-
-
+/**********************************************************************************************************************************/
 .wrapper_team {
   padding: 7% 10%;
 }
@@ -365,6 +365,11 @@ header button {
   font-family: "Merriweather";
   text-align: center;
   margin-bottom: 10%;
+}
+.alignment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .description_employee {
   width: 30%;
@@ -479,6 +484,7 @@ header button {
   display: flex;
   justify-content: space-around;
 }
+/*************************************************************************************************************************************/
 .wrapper_discussions {
   padding: 7% 10%;
   background-color: #f9fbfb;
@@ -493,7 +499,6 @@ header button {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .wrapper_discussions p {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
@@ -501,17 +506,47 @@ header button {
   font-family: "Merriweather";
   text-align: center;
 }
+
+.wrapper_personality_review {
+  display: flex;
+  justify-content: space-between;
+}
+.personality_review {
+  width: 40%;
+  background: url(../img/testimonial/Rounded_Rectangle.png) no-repeat center
+    center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider_personality {
+  display: flex;
+  justify-content: center;
+}
+.slide_switch_personality {
+  height: 1rem;
+  width: 1rem;
+  background-color: #d0d0d0;
+  border-radius: 0.1875rem;
+  margin: 0 1%;
+}
+.slide_switch_personality:hover {
+  background-color: #71f6eb;
+}
 .discussions {
-  padding: 5% 0 5% 40%;
-  margin-top: 5%;
-  background: url(../img/testimonial/Rounded-Rectangle.png) no-repeat left,
-    url(../img/testimonial/progress.png) no-repeat right bottom;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: end;
 }
 .discussions_text {
   background-color: #eaebed;
-  padding: 11% 10%;
-  margin-bottom: 6%;
   border-radius: 5px;
+  padding: 10% 5%;
 }
 .discussions_text h3 {
   font-size: 1.25rem;
@@ -538,10 +573,39 @@ header button {
   font-weight: normal;
   font-style: italic;
 }
-.wrapper_logos {
-  padding: 7% 0;
-  text-align: center;
+.slider_arrow {
+  display: flex;
+  margin-top: 5%;
 }
+.slide_text_left {
+  height: 3rem;
+  width: 3rem;
+  background: url(../img/testimonial/Shape_left.png) no-repeat center center;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #eaebed;
+}
+.slide_text_right {
+  height: 3rem;
+  width: 3rem;
+  background: url(../img/testimonial/Shape_right.png) no-repeat center center;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #eaebed;
+}
+.slide_text_left:hover {
+  background-color: #71f6eb;
+}
+.slide_text_right:hover {
+  background-color: #71f6eb;
+}
+/*******************************************************************************************************************************/
+.wrapper_logos {
+  padding: 7% 10%;
+  display: flex;
+  justify-content: space-around;
+}
+/********************************************************************************************************************************/
 .wrapper_footer {
   background: url(../img/footer/christmas_snow_tees_wide.png) no-repeat;
   background-size: cover;
@@ -559,6 +623,9 @@ header button {
   padding: 3%;
   width: 53%;
   box-sizing: border-box;
+}
+.form input{
+  color: #ffffff;
 }
 .your_name {
   width: 100%;
@@ -642,14 +709,15 @@ header button {
   padding-top: 5%;
 }
 .social_links {
-  text-align: center;
   background-color: #262b2e;
   padding: 7% 0;
+  text-align: center;
 }
 .social_links h3 {
   font-size: 1rem;
   color: #bbb8b9;
   font-family: "Raleway";
+  text-align: center;
 }
 .social_links p {
   font-size: 1rem;
@@ -657,22 +725,26 @@ header button {
   font-family: "Raleway";
   text-align: center;
 }
-.social_links ul{
+.social_links ul {
   list-style: none;
   margin: 2% 0 4%;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
-.social_links li{
-  display: inline-block;
+.social_links li {
   margin-right: 2%;
 }
-.social_links li a{
+.social_links li:last-child{
+  margin-right: 0;
+}
+.social_links li a {
   background-color: #3f4244;
   padding: 40%;
   color: #bbb8b9;
   text-decoration: none;
 }
-.social_links li:hover a{
+.social_links li:hover a {
   background-color: #6eeee4;
   color: #000000;
 }
