@@ -142,7 +142,6 @@ header h1 {
   text-align: center; }
 
 header h1 span {
-  padding: 0.5%;
   background-color: #9cd5d1; }
 
 header button {
@@ -338,32 +337,36 @@ header button {
   background: url(../img/most_service/go_over.png) no-repeat right center; }
 
 .background_sevices_rectangle {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5%; }
 
 .background_sevices_square {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5%; }
 
 .background_virtual_receptionist {
   width: 55%;
   background: url(../img/most_service/blog-1.png) no-repeat;
   background-size: cover;
-  position: relative; }
+  margin-bottom: 3%; }
 
 .background_psd_design {
   width: 42%;
   background: url(../img/most_service/blog-2.png) no-repeat;
   background-size: cover;
-  position: relative; }
+  margin-bottom: 3%; }
 
 .background_virtual_receptionist_two {
   width: 55%;
   background: url(../img/most_service/blog-3.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 3%; }
 
 .background_psd_html {
   width: 42%;
   background: url(../img/most_service/blog-4.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 3%; }
 
 .background_psd_design_two {
   width: 42%;
@@ -395,7 +398,7 @@ header button {
   color: #000000;
   font-family: "Merriweather";
   text-align: center;
-  margin-bottom: 10%; }
+  margin-bottom: 8%; }
 
 .alignment {
   display: -webkit-box;
@@ -408,7 +411,8 @@ header button {
   justify-content: space-between; }
 
 .description_employee {
-  width: 30%; }
+  width: 30%;
+  margin: 1.5% 0; }
 
 .description_employee h3 {
   font-size: 1rem;
@@ -576,6 +580,9 @@ header button {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.personality_review img {
+  margin-top: 5%; }
+
 .slider_personality {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,14 +602,13 @@ header button {
   background-color: #71f6eb; }
 
 .discussions {
+  margin-top: 5%;
   width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-  align-content: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end; }
@@ -610,7 +616,8 @@ header button {
 .discussions_text {
   background-color: #eaebed;
   border-radius: 5px;
-  padding: 10% 5%; }
+  padding: 10% 5%;
+  margin-top: 5%; }
 
 .discussions_text h3 {
   font-size: 1.25rem;
@@ -688,20 +695,19 @@ header button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #eaebed;
-  opacity: 0.8;
+  background-color: rgba(234, 235, 237, 0.7);
   padding: 7% 10%; }
 
 .form {
-  background-color: #000000;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 3%;
   width: 53%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .form input {
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0); }
 
 .your_name {
   width: 100%;
@@ -710,9 +716,7 @@ header button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 5%;
-  padding: 3%;
-  background-color: #000000;
-  opacity: 0.8; }
+  padding: 3%; }
 
 .your_subject {
   width: 100%;
@@ -721,9 +725,7 @@ header button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 5%;
-  padding: 3%;
-  background-color: #000000;
-  opacity: 0.8; }
+  padding: 3%; }
 
 .your_mail {
   width: 100%;
@@ -732,9 +734,7 @@ header button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 5%;
-  padding: 3%;
-  background-color: #000000;
-  opacity: 0.8; }
+  padding: 3%; }
 
 .your_Message {
   width: 100%;
@@ -743,9 +743,7 @@ header button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 5%;
-  padding: 3% 3% 25% 3%;
-  background-color: #000000;
-  opacity: 0.8; }
+  padding: 3% 3% 25% 3%; }
 
 .wrapper_footer input::-webkit-input-placeholder {
   font-size: 1rem;
@@ -779,8 +777,7 @@ header button {
   cursor: pointer; }
 
 .contact_list {
-  background-color: #000000;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 45%;
   padding: 3%;
   -webkit-box-sizing: border-box;
@@ -806,24 +803,26 @@ header button {
 
 .social_links {
   background-color: #262b2e;
-  padding: 7% 0;
+  padding: 5% 0;
   text-align: center; }
 
 .social_links h3 {
   font-size: 1rem;
   color: #bbb8b9;
   font-family: "Raleway";
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2%; }
 
 .social_links p {
   font-size: 1rem;
   color: #bbb8b9;
   font-family: "Raleway";
-  text-align: center; }
+  text-align: center;
+  margin-top: 3%; }
 
 .social_links ul {
   list-style: none;
-  margin: 2% 0 4%;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,7 +832,8 @@ header button {
   justify-content: center; }
 
 .social_links li {
-  margin-right: 2%; }
+  display: block;
+  margin-right: 3%; }
 
 .social_links li:last-child {
   margin-right: 0; }
