@@ -163,17 +163,16 @@ header button {
 }
 .wrapper_several_works_and_description {
   display: flex;
-  align-items: stretch;
-  align-items: center;
   margin-top: 5%;
 }
-.img_several_works {
+.img_several_works_background{
   width: 50%;
-  background: url(../img/about_us/Rectangle.png) no-repeat center center;
   text-align: center;
 }
-.img_several_works img {
-  margin-top: 8%;
+.img_several_works {
+  background: url(../img/about_us/Rectangle.png) no-repeat center center;
+  text-align: center;
+  padding: 0 10%;
 }
 .slider {
   margin-top: 5%;
@@ -294,7 +293,7 @@ header button {
   font-family: "Raleway";
   text-align: left;
 }
-.services a {
+.services .knowe_more {
   font-size: 1.125rem;
   letter-spacing: 0.0625rem;
   color: #f9fbfb;
@@ -306,23 +305,52 @@ header button {
 }
 .background_sevices_rectangle {
   background-color: rgba($color: #000000, $alpha: 0.7);
-  padding: 5%;
+  padding: 25% 10% 10%;
+  box-sizing: border-box;
+  height: 100%;
 }
 .background_sevices_square {
   background-color: rgba($color: #000000, $alpha: 0.7);
-  padding: 5%;
+  padding: 32% 10% 10%;
+  box-sizing: border-box;
+  height: 100%;
 }
 .background_virtual_receptionist {
   width: 55%;
   background: url(../img/most_service/blog-1.png) no-repeat;
   background-size: cover;
   margin-bottom: 3%;
+  position: relative;
 }
 .background_psd_design {
   width: 42%;
   background: url(../img/most_service/blog-2.png) no-repeat;
   background-size: cover;
   margin-bottom: 3%;
+  position: relative;
+}
+
+.full_description_of_the_service{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #71f5ea;
+  padding: 10%;
+}
+.full_description_of_the_service h3{
+  color: #000000;
+}
+.full_description_of_the_service p{
+  color: #000000;
+}
+.full_description_of_the_service img{
+  margin-top: 5%;
+}
+.active .full_description_of_the_service{
+  display: block;
 }
 
 .background_virtual_receptionist_two {
@@ -330,22 +358,26 @@ header button {
   background: url(../img/most_service/blog-3.png) no-repeat;
   background-size: cover;
   margin-bottom: 3%;
+  position: relative;
 }
 .background_psd_html {
   width: 42%;
   background: url(../img/most_service/blog-4.png) no-repeat;
   background-size: cover;
   margin-bottom: 3%;
+  position: relative;
 }
 .background_psd_design_two {
   width: 42%;
   background: url(../img/most_service/blog-5.png) no-repeat;
   background-size: cover;
+  position: relative;
 }
 .background_virtual_receptionist_three {
   width: 55%;
   background: url(../img/most_service/blog-6.png) no-repeat;
   background-size: cover;
+  position: relative;
 }
 /**********************************************************************************************************************************/
 .wrapper_team {
@@ -375,9 +407,10 @@ header button {
   justify-content: space-between;
 }
 .description_employee {
-  width: 30%;
-  margin: 1.5% 0;
+  margin: 0.8% 0;
+  position: relative;
 }
+
 .description_employee h3 {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
@@ -400,17 +433,10 @@ header button {
   font-family: "Raleway";
   text-align: left;
 }
-.background_description_employee_one {
-  height: 400px;
-  background: url(../img/team_part/team_1.png) no-repeat;
-  background-size: cover;
-  position: relative;
-}
 .personal_data {
   background-color: #6ff6eb;
   padding: 10%;
-  width: 70%;
-  opacity: 0;
+  display: none;
   position: relative;
 }
 .personal_data::before {
@@ -424,12 +450,12 @@ header button {
 .personal_data img {
   margin-right: 5%;
 }
-.background_description_employee_one:hover .personal_data {
-  opacity: 1;
+.description_employee:hover .personal_data {
+  display: block;
   position: absolute;
   left: 5%;
-  bottom: 10%;
-  transition: 1s;
+  right: 5%;
+  top:40%;
 }
 .background_description_employee_two {
   height: 400px;
@@ -510,22 +536,17 @@ header button {
   font-family: "Merriweather";
   text-align: center;
 }
-
 .wrapper_personality_review {
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
+}
+.personality_review_background{
+  width: 40%;
 }
 .personality_review {
-  width: 40%;
   background: url(../img/testimonial/Rounded_Rectangle.png) no-repeat center center;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.personality_review img{
-  margin-top: 5%;
+  text-align: center;
 }
 .slider_personality {
   display: flex;
@@ -542,17 +563,16 @@ header button {
   background-color: #71f6eb;
 }
 .discussions {
-  margin-top: 5%;
   width: 55%;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  align-content: center;
 }
 .discussions_text {
   background-color: #eaebed;
   border-radius: 5px;
-  padding: 10% 5%;
-  margin-top: 5%;
+  padding: 5%;
 }
 .discussions_text h3 {
   font-size: 1.25rem;
@@ -590,6 +610,7 @@ header button {
   border-radius: 0.1875rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #eaebed;
+  margin-right: 1rem;
 }
 .slide_text_right {
   height: 3rem;
@@ -598,6 +619,7 @@ header button {
   border-radius: 0.1875rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #eaebed;
+  margin-left: 1rem;
 }
 .slide_text_left:hover {
   background-color: #71f6eb;
@@ -628,9 +650,9 @@ header button {
   width: 53%;
   box-sizing: border-box;
 }
-.form input{
+.form input {
   color: #ffffff;
-  background-color: rgba($color: #000000, $alpha: 0);
+  background: none;
 }
 .your_name {
   width: 100%;
@@ -670,7 +692,7 @@ header button {
   font-family: "Raleway";
 }
 .registration_button {
-  background-color: rgba($color: #6eeee4, $alpha: 1.0);
+  background-color: rgba($color: #6eeee4, $alpha: 1);
   border-radius: 0.3125rem;
   font-size: 1.125rem;
   color: #000000;
@@ -730,18 +752,16 @@ header button {
   display: flex;
   justify-content: center;
 }
-.social_links li{
+.social_links li {
   display: block;
-  margin-right: 3%;
-}
-.social_links li:last-child{
-  margin-right: 0;
+  margin: 0 1%;
 }
 .social_links li a {
   background-color: #3f4244;
-  padding: 40%;
+  padding: 1rem;
   color: #bbb8b9;
   text-decoration: none;
+  display: block;
 }
 .social_links li:hover a {
   background-color: #6eeee4;
