@@ -469,7 +469,9 @@ header button {
   background-color: #6ff6eb;
   padding: 10%;
   display: none;
-  position: relative; }
+  position: relative;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
 
 .personal_data::before {
   content: "";
@@ -597,7 +599,8 @@ header button {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 5%; }
 
 .slide_switch_personality {
   height: 1rem;
@@ -843,7 +846,23 @@ header button {
 
 .social_links li {
   display: block;
-  margin: 0 1%; }
+  margin: 0 1%;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.social_links li:hover {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px); }
 
 .social_links li a {
   background-color: #3f4244;
@@ -855,3 +874,23 @@ header button {
 .social_links li:hover a {
   background-color: #6eeee4;
   color: #000000; }
+
+/*************************************************** Animate *****************************************************************/
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }

@@ -410,7 +410,6 @@ header button {
   margin: 0.8% 0;
   position: relative;
 }
-
 .description_employee h3 {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
@@ -438,6 +437,7 @@ header button {
   padding: 10%;
   display: none;
   position: relative;
+  animation-name: fadeInDown;
 }
 .personal_data::before {
   content: "";
@@ -551,6 +551,7 @@ header button {
 .slider_personality {
   display: flex;
   justify-content: center;
+  margin-top: 5%;
 }
 .slide_switch_personality {
   height: 1rem;
@@ -755,6 +756,14 @@ header button {
 .social_links li {
   display: block;
   margin: 0 1%;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.social_links li:hover {
+  transform: translateY(-8px);
 }
 .social_links li a {
   background-color: #3f4244;
@@ -766,4 +775,19 @@ header button {
 .social_links li:hover a {
   background-color: #6eeee4;
   color: #000000;
+}
+/*************************************************** Animate *****************************************************************/
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
