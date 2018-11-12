@@ -440,7 +440,7 @@ header button {
   justify-content: space-between; }
 
 .description_employee {
-  margin: 0.8% 0;
+  margin: 1.2% 0;
   position: relative; }
 
 .description_employee h3 {
@@ -469,9 +469,7 @@ header button {
   background-color: #6ff6eb;
   padding: 10%;
   display: none;
-  position: relative;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
+  position: relative; }
 
 .personal_data::before {
   content: "";
@@ -489,71 +487,9 @@ header button {
   position: absolute;
   left: 5%;
   right: 5%;
-  top: 40%; }
-
-.background_description_employee_two {
-  height: 400px;
-  background: url(../img/team_part/team_2.png) no-repeat;
-  background-size: cover;
-  position: relative; }
-
-.background_description_employee_two:hover .personal_data {
-  opacity: 1;
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  -webkit-transition: 1s;
-  transition: 1s; }
-
-.background_description_employee_three {
-  height: 400px;
-  background: url(../img/team_part/team_3.png) no-repeat;
-  background-size: cover;
-  position: relative; }
-
-.background_description_employee_three:hover .personal_data {
-  opacity: 1;
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  -webkit-transition: 1s;
-  transition: 1s; }
-
-.background_description_employee_four {
-  height: 400px;
-  background: url(../img/team_part/team_4.png) no-repeat;
-  background-size: cover;
-  position: relative; }
-
-.background_description_employee_four:hover .personal_data {
-  opacity: 1;
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  -webkit-transition: 1s;
-  transition: 1s; }
-
-.background_description_employee_five {
-  height: 400px;
-  background: url(../img/team_part/team_5.png) no-repeat;
-  background-size: cover;
-  position: relative; }
-
-.background_description_employee_five:hover .personal_data {
-  opacity: 1;
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  -webkit-transition: 1s;
-  transition: 1s; }
-
-.alignment {
-  margin-top: 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  top: 40%;
+  -webkit-animation: fadeInDown 1s;
+  animation: fadeInDown 1s; }
 
 /*************************************************************************************************************************************/
 .wrapper_discussions {
