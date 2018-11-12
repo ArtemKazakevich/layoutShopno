@@ -183,7 +183,7 @@ header button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5%; }
+  margin-top: 10%; }
 
 .img_several_works_background {
   width: 50%;
@@ -438,7 +438,8 @@ header button {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 10%; }
 
 .description_employee {
   margin: 1.2% 0;
@@ -521,7 +522,7 @@ header button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 5%; }
+  margin-top: 10%; }
 
 .personality_review_background {
   width: 40%; }
