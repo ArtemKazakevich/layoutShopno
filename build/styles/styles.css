@@ -1,4 +1,5 @@
 @import url(fontello-embedded.css);
+/*********************************************************************************************************************************/
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype"); }
@@ -32,6 +33,7 @@
   src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
   font-style: italic; }
 
+/**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
 html {
   font-size: 16px; }
@@ -173,8 +175,9 @@ header button {
   margin-top: 0; }
 
 .wrapper_about_us p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
   color: #000000;
   font-family: "Merriweather";
   text-align: center; }
@@ -218,8 +221,9 @@ header button {
   list-style: none; }
 
 .description h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.8125rem;
   color: #000000;
   font-family: "Merriweather";
   font-weight: bold; }
@@ -234,7 +238,8 @@ header button {
 
 /*********************************************************************************************************************************/
 .wrapper_featured_works {
-  padding: 7% 10%; }
+  padding: 7% 10%;
+  background-color: none; }
 
 .wrapper_featured_works h2 {
   font-size: 2.375rem;
@@ -316,8 +321,8 @@ header button {
 
 .services p {
   font-size: 1rem;
-  letter-spacing: 0;
-  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
   color: #ffffff;
   font-family: "Raleway";
   text-align: left; }
@@ -410,7 +415,8 @@ header button {
 
 /**********************************************************************************************************************************/
 .wrapper_team {
-  padding: 7% 10%; }
+  padding: 7% 10%;
+  background-color: none; }
 
 .wrapper_team h2 {
   font-size: 2.375rem;
@@ -425,6 +431,7 @@ header button {
 .wrapper_team p {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
   color: #000000;
   font-family: "Merriweather";
   text-align: center;
@@ -446,11 +453,13 @@ header button {
   position: relative; }
 
 .description_employee h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.8125rem;
   color: #272727;
   font-family: "Merriweather";
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1rem; }
 
 .description_employee h3 span {
   font-size: 0.8rem;
@@ -461,10 +470,12 @@ header button {
   font-style: italic; }
 
 .description_employee p {
-  font-size: 0.9rem;
-  letter-spacing: 0;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
   color: #000000;
   font-family: "Raleway";
+  font-size: 0.9rem;
   text-align: left; }
 
 .personal_data {
@@ -511,6 +522,7 @@ header button {
 .wrapper_discussions p {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
   color: #000000;
   font-family: "Merriweather";
   text-align: center; }
@@ -571,6 +583,7 @@ header button {
 .discussions_text h3 {
   font-size: 1.25rem;
   letter-spacing: 0.0625rem;
+  line-height: 1.8125rem;
   color: #000000;
   font-family: "Merriweather";
   font-weight: bold;
@@ -579,7 +592,7 @@ header button {
 .discussions_text p {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
-  line-height: 1.6875rem;
+  line-height: 1.75rem;
   color: #000000;
   font-family: "Raleway";
   padding-bottom: 5%;
@@ -628,6 +641,7 @@ header button {
 /*******************************************************************************************************************************/
 .wrapper_logos {
   padding: 7% 10%;
+  background-color: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,14 +654,15 @@ header button {
   background-size: cover; }
 
 .background_footer {
+  padding: 7% 10%;
+  background-color: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: rgba(234, 235, 237, 0.7);
-  padding: 7% 10%; }
+  background-color: rgba(234, 235, 237, 0.7); }
 
 .form {
   background-color: rgba(0, 0, 0, 0.7);

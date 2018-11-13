@@ -1,5 +1,7 @@
 @import "fontello-embedded.css";
 
+/*********************************************************************************************************************************/
+
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/Raleway/Raleway-Regular.ttf) format("truetype");
@@ -33,7 +35,53 @@
   src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
   font-style: italic;
 }
+
 /**********************************************************************************************************************************/
+
+$fontFamily_secondary_text: "Raleway";
+$fontFamily_title: "Montserrat";
+$fontFamily_text_and_secondary_title: "Merriweather";
+
+@mixin paddingSector ($background) {
+  padding: 7% 10%;
+  background-color: $background;
+}
+@mixin textTitle {
+  font-size: 2.375rem;
+  letter-spacing: 0.125rem;
+  color: #000000;
+  font-family: $fontFamily_title;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@mixin text {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-family: $fontFamily_text_and_secondary_title;
+  text-align: center;
+}
+@mixin secondaryTitle ($colorText_title) {
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.8125rem;
+  color: $colorText_title;
+  font-family: $fontFamily_text_and_secondary_title;
+  font-weight: bold;
+}
+@mixin secondaryText ($colorText_secondary) {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  color: $colorText_secondary;
+  font-family: $fontFamily_secondary_text;
+}
+
+/**********************************************************************************************************************************/
+
 html {
   font-size: 16px;
 }
@@ -65,7 +113,7 @@ nav img:hover {
   text-decoration: none;
   font-size: 1rem;
   color: #505050;
-  font-family: "Montserrat";
+  font-family: $fontFamily_title;
   font-weight: bold;
   padding: 0.5rem 1.2rem;
 }
@@ -122,7 +170,7 @@ header h1 {
   font-size: 2.5rem;
   letter-spacing: 0.1875rem;
   color: #505050;
-  font-family: "Montserrat";
+  font-family: $fontFamily_title;
   font-weight: bold;
   text-align: center;
 }
@@ -137,31 +185,19 @@ header button {
   font-size: 1.125rem;
   letter-spacing: 0.125rem;
   color: #000000;
-  font-family: "Montserrat";
+  font-family: $fontFamily_title;
   display: block;
   margin: 15% auto 0;
 }
 /*********************************************************************************************************************************/
 .wrapper_about_us {
-  padding: 7% 10%;
-  background-color: #f8fafa;
+  @include paddingSector (#f8fafa);
 }
 .wrapper_about_us h2 {
-  font-size: 2.375rem;
-  letter-spacing: 0.125rem;
-  color: #000000;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+  @include textTitle;
 }
 .wrapper_about_us p {
-  font-size: 1.125rem;
-  letter-spacing: 0.0625rem;
-  color: #000000;
-  font-family: "Merriweather";
-  text-align: center;
+  @include text;
 }
 .wrapper_several_works_and_description {
   display: flex;
@@ -200,41 +236,21 @@ header button {
   list-style: none;
 }
 .description h3 {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  color: #000000;
-  font-family: "Merriweather";
-  font-weight: bold;
+  @include secondaryTitle (#000000);
 }
 .description p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.75rem;
-  color: #000000;
-  font-family: "Raleway";
+  @include secondaryText (#000000);
   text-align: left;
 }
 /*********************************************************************************************************************************/
 .wrapper_featured_works {
-  padding: 7% 10%;
+  @include paddingSector (none);
 }
 .wrapper_featured_works h2 {
-  font-size: 2.375rem;
-  letter-spacing: 0.125rem;
-  color: #000000;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+  @include textTitle;
 }
 .wrapper_featured_works p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.75rem;
-  color: #000000;
-  font-family: "Merriweather";
-  text-align: center;
+  @include text;
   margin-bottom: 10%;
 }
 .wrapper_featured_works img {
@@ -249,29 +265,16 @@ header button {
 }
 /****************************************************************************************************************************/
 .wrapper_services {
-  padding: 7% 10%;
-  background-color: #f9fbfb;
+  @include paddingSector (#f9fbfb);
 }
 .wrapper_services > div {
   margin-top: 10%;
 }
 .wrapper_services h2 {
-  font-size: 2.375rem;
-  letter-spacing: 0.125rem;
-  color: #000000;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+  @include textTitle;
 }
 .wrapper_services p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.75rem;
-  color: #000000;
-  font-family: "Merriweather";
-  text-align: center;
+  @include text;
 }
 
 .services {
@@ -280,26 +283,17 @@ header button {
   flex-wrap: wrap;
 }
 .services h3 {
-  font-size: 1.25rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.8125rem;
-  color: #ffffff;
-  font-family: "Merriweather";
-  font-weight: bold;
+  @include secondaryTitle (#ffffff);
 }
 .services p {
-  font-size: 1rem;
-  letter-spacing: 0;
-  line-height: 1.5625rem;
-  color: #ffffff;
-  font-family: "Raleway";
+  @include secondaryText (#ffffff);
   text-align: left;
 }
 .services .knowe_more {
   font-size: 1.125rem;
   letter-spacing: 0.0625rem;
   color: #f9fbfb;
-  font-family: "Raleway";
+  font-family: $fontFamily_secondary_text;
   text-align: left;
   text-decoration: none;
   padding-right: 10%;
@@ -383,24 +377,13 @@ header button {
 }
 /**********************************************************************************************************************************/
 .wrapper_team {
-  padding: 7% 10%;
+  @include paddingSector (none);
 }
 .wrapper_team h2 {
-  font-size: 2.375rem;
-  letter-spacing: 0.125rem;
-  color: #000000;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+  @include textTitle;
 }
 .wrapper_team p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  color: #000000;
-  font-family: "Merriweather";
-  text-align: center;
+  @include text;
   margin-bottom: 8%;
 }
 .alignment {
@@ -414,25 +397,20 @@ header button {
   position: relative;
 }
 .description_employee h3 {
+  @include secondaryTitle (#272727);
   font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  color: #272727;
-  font-family: "Merriweather";
-  font-weight: bold;
 }
 .description_employee h3 span {
   font-size: 0.8rem;
   letter-spacing: 0.0625rem;
   color: #969696;
-  font-family: "Merriweather";
+  font-family: $fontFamily_text_and_secondary_title;
   font-weight: normal;
   font-style: italic;
 }
 .description_employee p {
+  @include secondaryText (#000000);
   font-size: 0.9rem;
-  letter-spacing: 0;
-  color: #000000;
-  font-family: "Raleway";
   text-align: left;
 }
 .personal_data {
@@ -463,25 +441,13 @@ header button {
 
 /*************************************************************************************************************************************/
 .wrapper_discussions {
-  padding: 7% 10%;
-  background-color: #f9fbfb;
+  @include paddingSector (#f9fbfb);
 }
 .wrapper_discussions h2 {
-  font-size: 2.375rem;
-  letter-spacing: 0.125rem;
-  color: #000000;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+  @include textTitle;
 }
 .wrapper_discussions p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  color: #000000;
-  font-family: "Merriweather";
-  text-align: center;
+  @include text;
 }
 .wrapper_personality_review {
   display: flex;
@@ -523,19 +489,11 @@ header button {
   padding: 5%;
 }
 .discussions_text h3 {
-  font-size: 1.25rem;
-  letter-spacing: 0.0625rem;
-  color: #000000;
-  font-family: "Merriweather";
-  font-weight: bold;
+  @include secondaryTitle (#000000);
   text-align: center;
 }
 .discussions_text p {
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.6875rem;
-  color: #000000;
-  font-family: "Raleway";
+  @include secondaryText (#000000);
   padding-bottom: 5%;
   background: url(../img/testimonial/Star.png) 50% bottom no-repeat;
 }
@@ -543,7 +501,7 @@ header button {
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #969696;
-  font-family: "Merriweather";
+  font-family: $fontFamily_text_and_secondary_title;
   font-weight: normal;
   font-style: italic;
 }
@@ -577,7 +535,7 @@ header button {
 }
 /*******************************************************************************************************************************/
 .wrapper_logos {
-  padding: 7% 10%;
+  @include paddingSector (none);
   display: flex;
   justify-content: space-around;
 }
@@ -587,10 +545,10 @@ header button {
   background-size: cover;
 }
 .background_footer {
+  @include paddingSector (none);
   display: flex;
   justify-content: space-between;
   background-color: rgba($color: #eaebed, $alpha: 0.7);
-  padding: 7% 10%;
 }
 .form {
   background-color: rgba($color: #000000, $alpha: 0.7);
@@ -637,14 +595,14 @@ header button {
 .wrapper_footer input::placeholder {
   font-size: 1rem;
   color: #ffffff;
-  font-family: "Raleway";
+  font-family: $fontFamily_secondary_text;
 }
 .registration_button {
   background-color: rgba($color: #6eeee4, $alpha: 1);
   border-radius: 0.3125rem;
   font-size: 1.125rem;
   color: #000000;
-  font-family: "Montserrat";
+  font-family: $fontFamily_title;
   text-align: center;
   padding: 3% 7%;
   border: none;
@@ -668,7 +626,7 @@ header button {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #ffffff;
-  font-family: "Raleway";
+  font-family: $fontFamily_secondary_text;
 }
 .contact_list img {
   width: 100%;
@@ -682,14 +640,14 @@ header button {
 .social_links h3 {
   font-size: 1rem;
   color: #bbb8b9;
-  font-family: "Raleway";
+  font-family: $fontFamily_secondary_text;
   text-align: center;
   margin-bottom: 2%;
 }
 .social_links p {
   font-size: 1rem;
   color: #bbb8b9;
-  font-family: "Raleway";
+  font-family: $fontFamily_secondary_text;
   text-align: center;
   margin-top: 3%;
 }
