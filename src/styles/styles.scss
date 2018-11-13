@@ -1,6 +1,3 @@
-@import "fontello-embedded.css";
-
-/*********************************************************************************************************************************/
 
 @font-face {
   font-family: "Raleway";
@@ -225,6 +222,7 @@ header button {
 }
 .slide_switch:hover {
   background-color: #71f6eb;
+  cursor: pointer;
 }
 .description {
   width: 50%;
@@ -475,6 +473,7 @@ header button {
 }
 .slide_switch_personality:hover {
   background-color: #71f6eb;
+  cursor: pointer;
 }
 .discussions {
   width: 55%;
@@ -529,9 +528,11 @@ header button {
 }
 .slide_text_left:hover {
   background-color: #71f6eb;
+  cursor: pointer;
 }
 .slide_text_right:hover {
   background-color: #71f6eb;
+  cursor: pointer;
 }
 /*******************************************************************************************************************************/
 .wrapper_logos {
@@ -696,3 +697,8 @@ header button {
     transform: translate3d(0, 0, 0);
   }
 }
+
+/******************************************************************************************************************************/
+
+@import "fontello-embedded";
+@import "mobile";

@@ -1,0 +1,30 @@
+@media screen and (max-device-width: 480px) {
+  html {
+    font-size: 10px; }
+  nav li {
+    position: none; }
+  .dropdown_menu {
+    padding-top: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 100%;
+    right: 0;
+    text-align: right; }
+  .dropdown_menu li .second_level {
+    display: block;
+    width: 100%;
+    top: 100%;
+    left: 0; }
+  .wrapper_several_works_and_description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .img_several_works_background {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .description {
+    text-align: center;
+    width: 100%; } }
