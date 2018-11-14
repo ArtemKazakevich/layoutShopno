@@ -103,8 +103,7 @@ nav img {
 }
 nav img:hover {
   border-radius: 0.75rem;
-  box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
-  background-color: rgba(47, 47, 47, 0.2);
+  background-color: #bbb8b9;
 }
 .dropdown_menu a {
   text-decoration: none;
@@ -116,8 +115,7 @@ nav img:hover {
 }
 .dropdown_menu a:hover {
   border-radius: 0.75rem;
-  box-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.15);
-  background-color: rgba(47, 47, 47, 0.2);
+  background-color: #bbb8b9;
 }
 
 nav ul {
@@ -208,6 +206,9 @@ header button {
   background: url(../img/about_us/Rectangle.png) no-repeat center center;
   text-align: center;
   padding: 0 10%;
+}
+.img_several_works img{
+  max-width: 100%;
 }
 .slider {
   margin-top: 5%;
@@ -394,6 +395,10 @@ header button {
   margin: 1.2% 0;
   position: relative;
 }
+.description_employee img{
+  max-width: 100%;
+}
+
 .description_employee h3 {
   @include secondaryTitle (#272727);
   font-size: 1rem;
@@ -459,6 +464,9 @@ header button {
   background: url(../img/testimonial/Rounded_Rectangle.png) no-repeat center center;
   text-align: center;
 }
+.personality_review img{
+  max-width: 100%;
+}
 .slider_personality {
   display: flex;
   justify-content: center;
@@ -493,7 +501,7 @@ header button {
 }
 .discussions_text p {
   @include secondaryText (#000000);
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   background: url(../img/testimonial/Star.png) 50% bottom no-repeat;
 }
 .discussions_text span {
@@ -539,6 +547,7 @@ header button {
   @include paddingSector (none);
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 /********************************************************************************************************************************/
 .wrapper_footer {
