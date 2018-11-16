@@ -1,24 +1,39 @@
-@media screen and (max-device-width: 420px) {
+@media screen and (max-device-width: 768px) {
   html {
     font-size: 10px; }
   nav li {
-    padding: 10% 0; }
+    padding: 5% 0; }
   .dropdown_menu {
     display: block;
     top: 100%;
     right: 0;
-    text-align: center; }
+    text-align: center;
+    width: 80vw;
+    z-index: 1; }
+  .dropdown_menu a {
+    font-size: 2rem;
+    padding: 0.5rem 3rem; }
+  .dropdown_menu li:hover {
+    background-color: #f8fafa; }
   .dropdown_menu a:hover {
-    background-color: #eff0f2; }
+    background-color: #f8fafa; }
   .dropdown_menu li {
     background-color: #bbb8b9; }
   .dropdown_menu li .second_level {
     display: block;
-    width: 12rem;
-    top: 0;
-    right: 100%; }
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    background-color: #eff0f2; }
   .dropdown_menu li .second_level li {
-    margin-top: 0; }
+    margin-top: 0;
+    background-color: #d6deee; }
+  .dropdown_menu li .second_level li:hover {
+    margin-top: 0;
+    background-color: #94dce9; }
+  .dropdown_menu li .second_level a:hover {
+    background-color: #94dce9; }
   /*******************************************************************************************************************************/
   .wrapper_several_works_and_description {
     -webkit-box-orient: vertical;
