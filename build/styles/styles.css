@@ -96,8 +96,6 @@ nav li {
   bottom: 30%;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
 
@@ -114,8 +112,6 @@ li:hover .dropdown_menu {
   top: 100%;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
 
@@ -944,7 +940,11 @@ header button {
     display: block;
     width: 100%;
     top: 100%;
-    left: 0; }
+    left: 0;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  .dropdown_menu li .second_level a {
+    font-size: 1.6rem; }
   .dropdown_menu li .second_level li {
     margin: 2% 0; }
   /*******************************************************************************************************************************/

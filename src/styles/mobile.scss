@@ -30,6 +30,10 @@
     width: 100%;
     top: 100%;
     left: 0;
+    transform: scaleY(1);
+  }
+  .dropdown_menu li .second_level a{
+    font-size: 1.6rem;
   }
   .dropdown_menu li .second_level li {
     margin: 2% 0;
