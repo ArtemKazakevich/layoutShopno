@@ -1,7 +1,7 @@
 const gulp = require('gulp'); /* подключаем gulp */
 const sass = require('gulp-sass'); /* переводит SASS в CSS */
-const image = require('gulp-image'); /*  */
-const browserSync = require('browser-sync'); /*  */
+const image = require('gulp-image'); /* сжимает image */
+const browserSync = require('browser-sync'); /* перезагружает браузер при изменении файла */
 const autoprefixer = require ('gulp-autoprefixer'); /* Проставлет вендорные префиксы в CSS для поддержки старых браузеров */
 
 
